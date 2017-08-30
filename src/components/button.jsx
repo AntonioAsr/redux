@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Button extends Component {
 
     render() {
-        return <h1>View 1</h1>
+        return <p className='title'>/View 1</p>
     }
     
 }

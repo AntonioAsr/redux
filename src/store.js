@@ -1,13 +1,7 @@
 import {createStore} from 'redux'
+import rootReducer from './reducers'
 
-const reducer =( state, action)=>{
-    switch(action.type){
-        case "add":
-        break;
-        case "substract":
-        break;
-    }
-
-const store = createStore(reducer, 1);
-
+export default (intialState)=>{
+    return createStore(rootReducer, intialState,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 }

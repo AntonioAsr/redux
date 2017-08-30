@@ -25,24 +25,24 @@ const BasicExample = () => (
 )
 
 const Home = () => (
-  <div>
-    <h2>Home</h2>
+  <div className="title">
+    <p>/Home</p> 
   </div>
 )
 
-const About = () => (
+/* const About = () => (
   <div>
     <h2>About</h2>
   </div>
-)
+) */
 
 const Topics = ({ match }) => (
   <div>
-    <h2>Topics</h2>
+    <p className="title">Topics</p>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>
-          Rendering with React sdf
+          Rendering with React 
         </Link>
       </li>
       <li>
