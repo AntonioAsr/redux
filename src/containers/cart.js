@@ -11,9 +11,11 @@ class Cart extends Component {
 
         }
     }
-    render() { 
+    render() {
+
+        const { cart } = this.props;
         
-        const cartItems = this.props.cart.map((item,idx)=>{
+        const cartItems = cart.length && cart.map((item,idx)=>{
             return <li key={idx}> {item}</li>
         });
 
